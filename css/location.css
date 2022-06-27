@@ -1,0 +1,42 @@
+:root {
+    --color-primary: #B6FFCE;
+    --color-secondary: #F6FFA4;
+    --color-terciario: #FDD7AA;
+    --color-content: #FFA8A8;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-template-rows: 100px auto;
+}
+
+.container .item-1{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color: var(--color-secondary);
+}
+
+.container .item-2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: var(--color-terciario);
+}
+
+.container .item-3 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: var(--color-content);
+}
